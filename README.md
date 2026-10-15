@@ -6,7 +6,7 @@ Um site de portfólio moderno e de alto desempenho, desenvolvido com as tecnolog
 
 Acesse a versão em produção:
 
-**https://guisebastiao.com.br**
+**[Acessar](https://www.guilhermesebastiao.dev)**
 
 ## 🛠️ Tech Stack
 
