@@ -1,2 +1,6 @@
-export const CARD_CLASSNAME =
-  "relative bg-foreground/5 border-2 border-foreground/10 rounded-lg p-4";
+import { SURFACE_CLASSNAME } from "@/shared/lib/layout";
+import { twMerge } from "tailwind-merge";
+
+export { SURFACE_CLASSNAME };
+
+export const CARD_CLASSNAME = twMerge(SURFACE_CLASSNAME, "p-5");

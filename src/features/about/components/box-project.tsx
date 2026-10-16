@@ -1,6 +1,3 @@
-"use client";
-
-import { StripedPatternBase } from "@/shared/components/striped-pattern-base";
 import { CARD_CLASSNAME } from "@/features/about/constants/cards-classname";
 import { PROJECT_COUNT } from "@/features/about/constants/project-count";
 import { NumberTicker } from "@/shared/components/ui/number-ticker";
@@ -21,7 +18,6 @@ export const BoxProject = () => {
           {t("card-me.wrapper.project.title")}
         </span>
       </div>
-      <StripedPatternBase />
     </div>
   );
 };

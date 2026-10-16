@@ -32,6 +32,9 @@
   "card-database": {
     "title": "Banco de Dados & Infraestrutura"
   },
+  "card-cloud": {
+    "title": "DevOps & Nuvem"
+  },
   "card-tools": {
     "title": "Ferramentas"
   }

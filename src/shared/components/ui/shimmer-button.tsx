@@ -32,7 +32,7 @@ export const ShimmerButton = React.forwardRef<HTMLButtonElement, ShimmerButtonPr
           className={cn(
             "absolute inset-0 size-full",
             "rounded-lg px-4 text-sm font-medium shadow-[inset_0_-8px_10px_#ffffff1f]",
-            "transform-gpu transition-all duration-300 ease-in-out",
+            "transform-gpu transition-shadow duration-300 ease-in-out",
             "group-hover:shadow-[inset_0_-6px_10px_#ffffff3f]",
             "group-active:shadow-[inset_0_-10px_10px_#ffffff3f]",
           )}

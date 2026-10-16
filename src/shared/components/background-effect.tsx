@@ -1,5 +1,3 @@
-"use client";
-
 import detailBg from "@/assets/images/detail.webp";
 
 export const BackgroundEffect = () => {

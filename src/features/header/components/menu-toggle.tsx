@@ -1,5 +1,3 @@
-"use client";
-
 import { MENU_TOGGLE_ICON_CLASSES } from "@/features/header/constants/menu-toggle-constant";
 import { Button } from "@/shared/components/ui/button";
 import { twMerge } from "tailwind-merge";

@@ -1,6 +1,3 @@
-"use client";
-
-import { StripedPatternBase } from "@/shared/components/striped-pattern-base";
 import { REPOSITORY_COUNT } from "@/features/about/constants/repository-count";
 import { CARD_CLASSNAME } from "@/features/about/constants/cards-classname";
 import { NumberTicker } from "@/shared/components/ui/number-ticker";
@@ -21,7 +18,6 @@ export const BoxRepository = () => {
           {t("card-me.wrapper.repository.title")}
         </span>
       </div>
-      <StripedPatternBase />
     </div>
   );
 };

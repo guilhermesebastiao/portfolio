@@ -1,9 +1,7 @@
-"use client";
-
-import { StripedPatternBase } from "@/shared/components/striped-pattern-base";
 import { motionVariantHelper } from "@/shared/helpers/motion-variant-helper";
 import { CARD_CLASSNAME } from "@/features/about/constants/cards-classname";
 import { StackComponent } from "@/features/about/components/stack";
+import { CARD_HEADER_CLASSNAME } from "@/shared/lib/layout";
 import { fadeSlide } from "@/shared/helpers/fade-slide";
 import { DEV_STACKS } from "@/assets/data/stacks";
 import { useTranslation } from "react-i18next";
@@ -17,7 +15,7 @@ export const FrontStackCard = () => {
 
   return (
     <motion.div className={CARD_CLASSNAME} {...motionVariantHelper(fadeSlide({ y: -50 }))}>
-      <div className="flex items-center gap-1.5 mb-3">
+      <div className={CARD_HEADER_CLASSNAME}>
         <LaptopMinimal className="size-4.5 text-foreground/85" />
         <h1 className="text-[15px] font-medium tracking-wide text-foreground/85">
           {t("card-frontend.title")}
@@ -28,7 +26,6 @@ export const FrontStackCard = () => {
           <StackComponent key={index} stack={stack} />
         ))}
       </div>
-      <StripedPatternBase />
     </motion.div>
   );
 };

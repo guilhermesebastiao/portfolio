@@ -1,5 +1,3 @@
-"use client";
-
 import { motionVariantHelper } from "@/shared/helpers/motion-variant-helper";
 import { BaseImage } from "@/shared/components/base-image";
 import { fadeSlide } from "@/shared/helpers/fade-slide";
@@ -14,10 +12,10 @@ export const ProfileImage = () => {
       {...motionVariantHelper(fadeSlide({ x: 50 }))}
     >
       <div className="absolute -inset-100 -z-10 pointer-events-none">
-        <Ripple mainCircleSize={280} />
+        <Ripple mainCircleSize={250} />
       </div>
-      <div className="relative max-w-85 min-w-72 w-full aspect-square rounded-full size-full overflow-hidden border-3 border-muted-foreground bg-foreground">
-        <BaseImage src={photoImg} quality={100} alt="Guilherme Sebastião" />
+      <div className="relative select-none max-w-85 min-w-72 w-full aspect-square rounded-full size-full overflow-hidden border-3 border-muted-foreground bg-foreground">
+        <BaseImage src={photoImg} alt="Guilherme Sebastião" />
       </div>
     </motion.div>
   );

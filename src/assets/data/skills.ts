@@ -4,4 +4,5 @@ export const SKILLS = [
   "Backend Developer",
   "API Development",
   "UI/UX Styling",
+  "Software Architecture",
 ];

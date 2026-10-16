@@ -1,5 +1,3 @@
-"use client";
-
 import type { NavItems } from "@/features/header/constants/nav-items-constant";
 import { sidebarVariant } from "@/features/header/helpers/sidebar-variant";
 import { itemVariant } from "@/features/header/helpers/item-variant";

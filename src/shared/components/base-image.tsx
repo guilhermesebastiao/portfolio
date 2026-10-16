@@ -1,5 +1,3 @@
-"use client";
-
 import { GA_EVENTS, trackEvent } from "@/shared/lib/analytics";
 import { Skeleton } from "@/shared/components/ui/skeleton";
 import { useState, type SyntheticEvent } from "react";

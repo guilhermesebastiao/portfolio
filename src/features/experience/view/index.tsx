@@ -1,13 +1,13 @@
-"use client";
-
 import { CertificationItem } from "@/features/experience/components/certification-item";
 import { GraduationItem } from "@/features/experience/components/graduation-item";
 import { motionVariantHelper } from "@/shared/helpers/motion-variant-helper";
 import { DiaTextReveal } from "@/shared/components/ui/dia-text-reveal";
 import { BookmarkCheck, GraduationCap, Briefcase } from "lucide-react";
 import { WorkItem } from "@/features/experience/components/work-item";
+import { SECTION_TITLE_CLASSNAME } from "@/shared/lib/layout";
 import { CERTIFICATIONS } from "@/assets/data/certifications";
 import { Card } from "@/features/experience/components/card";
+import { SECTION_CLASSNAME } from "@/shared/lib/layout";
 import { fadeSlide } from "@/shared/helpers/fade-slide";
 import { GRADUATIONS } from "@/assets/data/graduations";
 import { useTranslation } from "react-i18next";
@@ -17,10 +17,10 @@ export const Experience = () => {
   const { t } = useTranslation("experience");
 
   return (
-    <div data-container="3" className="flex min-h-screen w-full flex-col gap-10 py-8">
-      <DiaTextReveal className="text-3xl font-bold" duration={1.5} text={t("title")} />
-      <div className="grid w-full grid-cols-1 gap-3 xl:grid-cols-12">
-        <div className="xl:col-span-5 flex flex-col gap-3">
+    <div data-container="3" className={SECTION_CLASSNAME}>
+      <DiaTextReveal className={SECTION_TITLE_CLASSNAME} duration={1.5} text={t("title")} />
+      <div className="grid w-full grid-cols-1 gap-5 xl:grid-cols-12">
+        <div className="flex flex-col gap-5 xl:col-span-5">
           <Card
             icon={Briefcase}
             title={t("card-middle.title")}

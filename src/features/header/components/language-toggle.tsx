@@ -1,5 +1,3 @@
-"use client";
-
 import { LANGUAGE_TOGGLE_TEXT_CLASSES } from "@/features/header/constants/language-toggle.constant";
 import { useTrackEvents } from "@/features/header/hooks/use-track-events";
 import { Button } from "@/shared/components/ui/button";

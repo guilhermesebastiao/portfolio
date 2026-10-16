@@ -1,5 +1,3 @@
-"use client";
-
 import { CertificationModal } from "@/features/experience/components/certification-modal";
 import { motionVariantHelper } from "@/shared/helpers/motion-variant-helper";
 import type { Certification } from "@/assets/data/certifications";
@@ -16,7 +14,7 @@ export const CertificationItem = ({ certification }: CertificationItemProps) => 
 
   return (
     <motion.div
-      className="flex h-full flex-col overflow-hidden rounded-lg border border-border/50 bg-foreground/5 cursor-default gap-2 p-4"
+      className="flex h-full flex-col overflow-hidden rounded-lg border border-foreground/7 dark:bg-neutral-800/40 bg-neutral-300/40 cursor-default z-10 gap-2 p-4"
       {...motionVariantHelper(fadeSlide({ scale: 0.9 }))}
     >
       <h3 className="line-clamp-2 text-sm font-semibold text-foreground/90">

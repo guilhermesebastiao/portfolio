@@ -42,8 +42,6 @@ src/
 ├── app/            # Next.js App Router (Pages, Layouts, Providers)
 ├── assets/         # Assets estáticos (Imagens, Dados, PDFs)
 ├── features/       # Feature-based modules (About, Contact, Projects, etc.)
-│   └── [feature]/
-│       └── components/
 └── shared/         # Components compartilhados, hooks, utilities, e providers
 ```
 

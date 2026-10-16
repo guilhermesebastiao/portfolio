@@ -1,5 +1,3 @@
-"use client";
-
 import { useTrackEvents } from "@/features/experience/hooks/use-track-events";
 import type { Certification } from "@/assets/data/certifications";
 import { BaseImage } from "@/shared/components/base-image";
@@ -35,9 +33,12 @@ export const CertificationModal = ({ certification }: CertificationItemProps) =>
       <DialogTrigger
         onClick={handleDialogOpen}
         render={
-          <Button className="mt-auto" variant="outline">
-            <BadgeCheck className="text-foreground/80" />
-            <span className="font-normal text-[13px] text-foreground/80">{t("modal.button")}</span>
+          <Button
+            variant="ghost"
+            className="mt-auto border border-foreground/7 dark:bg-neutral-800 bg-neutral-300 hover:bg-neutral-100 dark:hover:bg-neutral-700"
+          >
+            <BadgeCheck />
+            <span>{t("modal.button")}</span>
           </Button>
         }
       />

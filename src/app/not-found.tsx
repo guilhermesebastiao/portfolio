@@ -2,10 +2,8 @@
 
 import { motionVariantHelper } from "@/shared/helpers/motion-variant-helper";
 import { BackgroundEffect } from "@/shared/components/background-effect";
-import { LightEffect } from "@/shared/components/light-effect";
 import { GA_EVENTS, trackEvent } from "@/shared/lib/analytics";
 import { BaseImage } from "@/shared/components/base-image";
-import { Meteors } from "@/shared/components/ui/meteors";
 import notFoundImg from "@/assets/images/not-found.webp";
 import { fadeSlide } from "@/shared/helpers/fade-slide";
 import { Button } from "@/shared/components/ui/button";
@@ -33,8 +31,6 @@ export default function NotFound() {
 
   return (
     <main className="relative min-h-dvh bg-background flex">
-      <Meteors />
-      <LightEffect count={5} />
       <BackgroundEffect />
       <motion.div
         {...motionVariantHelper(fadeSlide({ scale: 0.9 }))}

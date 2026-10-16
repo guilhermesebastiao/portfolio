@@ -10,7 +10,7 @@ export type Stack = {
 };
 
 export type Stacks = {
-  type: "frontend" | "backend" | "database" | "tools";
+  type: "frontend" | "backend" | "database" | "cloud" | "tools";
   stacks: Stack[];
 };
 
@@ -25,7 +25,7 @@ export const DEV_STACKS: Stacks[] = [
       { name: "React Native", icon: TbBrandReactNative },
       { name: "NextJS", icon: SiIcons.SiNextdotjs },
       { name: "Tailwind", icon: SiIcons.SiTailwindcss },
-      { name: "TanStack", icon: SiIcons.SiReactquery },
+      { name: "TanStack Query", icon: SiIcons.SiReactquery },
       { name: "Redux", icon: SiIcons.SiRedux },
       { name: "Axios", icon: SiIcons.SiAxios },
       { name: "Zod", icon: SiIcons.SiZod },
@@ -48,8 +48,9 @@ export const DEV_STACKS: Stacks[] = [
       { name: "Prisma", icon: SiIcons.SiPrisma },
       { name: "Sequelize", icon: SiIcons.SiSequelize },
       { name: "OAuth2", icon: TbBrandOauth },
-      { name: "Swagger", icon: SiIcons.SiSwagger },
+      { name: "OpenAPI", icon: SiIcons.SiSwagger },
       { name: "JWT", icon: SiIcons.SiJsonwebtokens },
+      { name: "RestAPI", icon: SiIcons.SiFastapi },
     ],
   },
   {
@@ -60,25 +61,32 @@ export const DEV_STACKS: Stacks[] = [
       { name: "H2Database", icon: SiIcons.SiH2Database },
       { name: "MongoDB", icon: SiIcons.SiMongodb },
       { name: "RabbitMQ", icon: SiIcons.SiRabbitmq },
+      { name: "Redis", icon: SiIcons.SiRedis },
+    ],
+  },
+  {
+    type: "cloud",
+    stacks: [
+      { name: "Docker", icon: SiIcons.SiDocker },
       { name: "Vercel", icon: SiIcons.SiVercel },
+      { name: "Cloudflare", icon: SiIcons.SiCloudflare },
       { name: "Neon", icon: SiIcons.SiNeon },
     ],
   },
   {
     type: "tools",
     stacks: [
+      { name: "Git", icon: SiIcons.SiGit },
+      { name: "GitHub", icon: SiIcons.SiGithub },
       { name: "VSCode", icon: VscVscodeInsiders },
       { name: "IntelliJ", icon: SiIcons.SiIntellijidea },
       { name: "DBeaver", icon: SiIcons.SiDbeaver },
-      { name: "PGAdmin", icon: SiIcons.SiPostgresql },
+      { name: "pgAdmin", icon: SiIcons.SiPostgresql },
+      { name: "Figma", icon: SiIcons.SiFigma },
       { name: "Postman", icon: SiIcons.SiPostman },
-      { name: "Docker", icon: SiIcons.SiDocker },
       { name: "Vite", icon: SiIcons.SiVite },
       { name: "NPM", icon: SiIcons.SiNpm },
       { name: "PNPM", icon: SiIcons.SiPnpm },
-      { name: "Figma", icon: SiIcons.SiFigma },
-      { name: "Git", icon: SiIcons.SiGit },
-      { name: "GitHub", icon: SiIcons.SiGithub },
     ],
   },
 ];

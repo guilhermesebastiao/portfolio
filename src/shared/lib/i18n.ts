@@ -7,6 +7,7 @@ if (!i18n.isInitialized) {
     resources,
     lng: DEFAULT_LANGUAGE,
     fallbackLng: DEFAULT_LANGUAGE,
+    initAsync: false,
     ns: [
       "header",
       "hero",

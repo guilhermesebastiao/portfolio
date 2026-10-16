@@ -1,5 +1,3 @@
-"use client";
-
 import { LanguageToggle } from "@/features/header/components/language-toggle";
 import { ThemeToggle } from "@/features/header/components/theme-toggle";
 import { MenuToggle } from "@/features/header/components/menu-toggle";

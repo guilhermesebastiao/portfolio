@@ -1,4 +1,5 @@
-"use client";
+import { SOCIAL_LINK_CLASSNAME } from "@/shared/lib/layout";
+import { twMerge } from "tailwind-merge";
 
 type SocialLinkProps = {
   href: string;
@@ -12,7 +13,7 @@ export const SocialLink = ({ href, onClick, children }: SocialLinkProps) => (
     target="_blank"
     rel="noreferrer"
     onClick={onClick}
-    className="rounded-full p-2.5 transition border border-transparent hover:bg-foreground/10 hover:border-border"
+    className={twMerge(SOCIAL_LINK_CLASSNAME, "p-2.5")}
   >
     {children}
   </a>

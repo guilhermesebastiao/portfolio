@@ -1,24 +1,28 @@
 "use client";
 
-import { PropsWithChildren, useEffect, useMemo } from "react";
+import { PropsWithChildren, useEffect, useState } from "react";
 import { LenisContext } from "@/shared/context/lenis-context";
 import Lenis from "lenis";
 
 export const LenisProvider = ({ children }: PropsWithChildren) => {
-  const lenis = useMemo(
-    () =>
-      new Lenis({
-        duration: 1.2,
-        smoothWheel: true,
-      }),
-    [],
-  );
+  const [lenis, setLenis] = useState<Lenis | null>(null);
 
   useEffect(() => {
+    const instance = new Lenis({
+      duration: 1.2,
+      smoothWheel: true,
+    });
+
     let rafId: number;
+    let published = false;
 
     const raf = (time: number) => {
-      lenis.raf(time);
+      if (!published) {
+        published = true;
+        setLenis(instance);
+      }
+
+      instance.raf(time);
       rafId = requestAnimationFrame(raf);
     };
 
@@ -26,11 +30,9 @@ export const LenisProvider = ({ children }: PropsWithChildren) => {
 
     return () => {
       cancelAnimationFrame(rafId);
-      lenis.destroy();
+      instance.destroy();
     };
-  }, [lenis]);
+  }, []);
 
-  const value = useMemo(() => ({ lenis }), [lenis]);
-
-  return <LenisContext.Provider value={value}>{children}</LenisContext.Provider>;
+  return <LenisContext.Provider value={{ lenis }}>{children}</LenisContext.Provider>;
 };

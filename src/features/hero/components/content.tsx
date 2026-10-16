@@ -1,5 +1,3 @@
-"use client";
-
 import { useDownloadResume } from "@/features/hero/hooks/use-download-resume";
 import { motionVariantHelper } from "@/shared/helpers/motion-variant-helper";
 import { TypingAnimation } from "@/shared/components/ui/typing-animation";
@@ -24,14 +22,17 @@ export const Content = () => {
     <div className="max-w-lg space-y-6 text-center md:text-left">
       <motion.h3
         className="tracking-wide text-foreground/85"
-        {...motionVariantHelper(fadeSlide({ x: -50 }))}
+        {...motionVariantHelper(fadeSlide({ x: -50, delay: 0.05 }))}
       >
         {t("title")}
       </motion.h3>
-      <motion.div className="text-4xl font-bold" {...motionVariantHelper(fadeSlide({ x: -50 }))}>
+      <motion.div
+        className="text-4xl font-bold"
+        {...motionVariantHelper(fadeSlide({ x: -50, delay: 0.14 }))}
+      >
         <DiaTextReveal text="Guilherme Sebastião" />
       </motion.div>
-      <motion.div {...motionVariantHelper(fadeSlide({ x: -50 }))}>
+      <motion.div {...motionVariantHelper(fadeSlide({ x: -50, delay: 0.23 }))}>
         <TypingAnimation
           words={SKILLS}
           loop
@@ -41,13 +42,13 @@ export const Content = () => {
       </motion.div>
       <motion.p
         className="text-sm leading-relaxed text-muted-foreground"
-        {...motionVariantHelper(fadeSlide({ x: -50 }))}
+        {...motionVariantHelper(fadeSlide({ x: -50, delay: 0.32 }))}
       >
         {t("description")}
       </motion.p>
       <motion.div
         className="flex not-md:justify-center"
-        {...motionVariantHelper(fadeSlide({ x: -50 }))}
+        {...motionVariantHelper(fadeSlide({ x: -50, delay: 0.41 }))}
       >
         <ShimmerButton onClick={downloadResume} className="md:mx-0">
           <Download className="size-4.5" />
@@ -55,14 +56,14 @@ export const Content = () => {
         </ShimmerButton>
       </motion.div>
       <motion.div
-        {...motionVariantHelper(fadeSlide({ x: -50 }))}
+        {...motionVariantHelper(fadeSlide({ x: -50, delay: 0.5 }))}
         className="flex items-center justify-center gap-3 pt-2 md:justify-start"
       >
-        <SocialLink href="https://github.com/guisebastiao" onClick={redirectedToGithub}>
+        <SocialLink href="https://github.com/guilhermesebastiao" onClick={redirectedToGithub}>
           <FaGithub className="size-4.75 text-foreground/85" />
         </SocialLink>
         <SocialLink
-          href="https://www.linkedin.com/in/guilherme-sebastiao/"
+          href="https://www.linkedin.com/in/guilhermesebastiao"
           onClick={redirectedToLinkedIn}
         >
           <FaLinkedin className="size-4.75 text-foreground/85" />

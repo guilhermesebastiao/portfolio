@@ -1,5 +1,3 @@
-"use client";
-
 import type { NavItems } from "@/features/header/constants/nav-items-constant";
 import { NavItem } from "@/features/header/components/nav-item";
 

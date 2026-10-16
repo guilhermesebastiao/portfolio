@@ -1,5 +1,3 @@
-"use client";
-
 import { SendMailRequest } from "@/features/contact/types/send-mail-types";
 import { UseFormReturn } from "react-hook-form";
 import { createContext } from "react";

@@ -1,5 +1,3 @@
-"use client";
-
 import type { NavItems } from "@/features/header/constants/nav-items-constant";
 import { useTranslation } from "react-i18next";
 import { twMerge } from "tailwind-merge";

@@ -4,8 +4,8 @@ export const SITE_METADATA = {
   title: "Guilherme Sebastião - Developer",
   description:
     "Guilherme Sebastião - Full Stack Developer. Building scalable web applications using React, Next.js, TypeScript, NestJS, Java, and Spring Boot. Explore my work!",
-  url: "https://guisebastiao.com.br",
-  ogImage: "https://guisebastiao.com.br/og-image.jpg",
+  url: "https://guilhermesebastiao.dev",
+  ogImage: "https://guilhermesebastiao.dev/og-image.jpg",
   keywords: [
     "Guilherme Sebastião",
     "Full Stack Developer",
@@ -23,7 +23,7 @@ export const SITE_METADATA = {
     "REST API",
   ],
   links: {
-    github: "https://github.com/guisebastiao",
-    linkedin: "https://www.linkedin.com/in/guilherme-sebastiao/",
+    github: "https://github.com/guilhermesebastiao",
+    linkedin: "https://www.linkedin.com/in/guilhermesebastiao",
   },
 } as const;

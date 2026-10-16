@@ -32,6 +32,9 @@
   "card-database": {
     "title": "Databases & Infrastructure"
   },
+  "card-cloud": {
+    "title": "DevOps & Cloud"
+  },
   "card-tools": {
     "title": "Tools"
   }

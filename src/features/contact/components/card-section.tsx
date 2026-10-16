@@ -1,5 +1,3 @@
-"use client";
-
 import { motionVariantHelper } from "@/shared/helpers/motion-variant-helper";
 import { fadeSlide } from "@/shared/helpers/fade-slide";
 import { useTranslation } from "react-i18next";
@@ -10,7 +8,7 @@ export const CardSection = () => {
   const { t } = useTranslation("contact");
 
   return (
-    <div className="space-y-6 flex-1 py-4">
+    <div className="flex flex-1 flex-col justify-center space-y-8 py-2 lg:min-h-105 lg:pr-10">
       <motion.h2
         className="text-2xl font-semibold text-foreground"
         {...motionVariantHelper(fadeSlide({ x: -50 }))}

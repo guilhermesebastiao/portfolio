@@ -1,5 +1,3 @@
-"use client";
-
 import { THEME_TOGGLE_ICON_CLASSES } from "@/features/header/constants/theme-toggle-constant";
 import { useTrackEvents } from "@/features/header/hooks/use-track-events";
 import { Button } from "@/shared/components/ui/button";

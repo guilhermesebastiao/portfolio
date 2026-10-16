@@ -1,8 +1,6 @@
-"use client";
-
-import { StripedPatternBase } from "@/shared/components/striped-pattern-base";
 import { motionVariantHelper } from "@/shared/helpers/motion-variant-helper";
 import { CARD_CLASSNAME } from "@/features/about/constants/cards-classname";
+import { CARD_HEADER_CLASSNAME } from "@/shared/lib/layout";
 import { fadeSlide } from "@/shared/helpers/fade-slide";
 import { useTranslation } from "react-i18next";
 import { twMerge } from "tailwind-merge";
@@ -15,9 +13,9 @@ export const AboutMeCard = () => {
   return (
     <motion.div
       {...motionVariantHelper(fadeSlide({ y: -50 }))}
-      className={twMerge(CARD_CLASSNAME, "flex flex-col flex-1")}
+      className={twMerge(CARD_CLASSNAME, "flex flex-col")}
     >
-      <div className="mb-3 flex items-center gap-1.5">
+      <div className={CARD_HEADER_CLASSNAME}>
         <Joystick className="size-4.5 text-foreground/90" />
         <h3 className="text-center text-base font-semibold text-foreground/90">
           {t("card-me.title")}
@@ -26,7 +24,6 @@ export const AboutMeCard = () => {
       <p className="text-sm font-light leading-relaxed tracking-wide text-foreground/85">
         {t("card-me.description")}
       </p>
-      <StripedPatternBase />
     </motion.div>
   );
 };

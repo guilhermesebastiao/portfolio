@@ -8,10 +8,12 @@ import { MobileMenu } from "@/features/header/components/mobile-menu";
 import { DesktopNav } from "@/features/header/components/desktop-nav";
 import { APP_SECTIONS, AppSection } from "@/shared/lib/analytics";
 import { Actions } from "@/features/header/components/actions";
+import { SITE_CONTAINER_CLASSNAME } from "@/shared/lib/layout";
 import { BaseImage } from "@/shared/components/base-image";
-import profileImg from "@/assets/images/profile.webp";
+import iconImg from "@/assets/images/icon.webp";
 import { AnimatePresence } from "motion/react";
 import { useCallback, useState } from "react";
+import { twMerge } from "tailwind-merge";
 
 export const Header = () => {
   const { active } = useActiveSection();
@@ -51,13 +53,13 @@ export const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 z-50 flex h-16 w-full justify-center border-b bg-background">
-      <div className="flex max-w-7xl w-full items-center justify-between px-3.5">
+      <div className={twMerge("flex items-center justify-between", SITE_CONTAINER_CLASSNAME)}>
         <div
           className="flex cursor-pointer select-none items-center gap-2"
           onClick={handleToInitialPage}
         >
           <div className="relative size-9 overflow-hidden rounded-full border-2 border-muted-foreground">
-            <BaseImage src={profileImg.src} alt="profile" />
+            <BaseImage src={iconImg.src} alt="profile" />
           </div>
           <h1 className="text-[15px] font-semibold text-muted-foreground">
             <strong>Gui.</strong> Sebastião

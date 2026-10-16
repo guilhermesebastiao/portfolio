@@ -1,8 +1,6 @@
-"use client";
-
-import { StripedPatternBase } from "@/shared/components/striped-pattern-base";
 import { motionVariantHelper } from "@/shared/helpers/motion-variant-helper";
 import { CARD_CLASSNAME } from "@/features/about/constants/cards-classname";
+import { CARD_HEADER_CLASSNAME } from "@/shared/lib/layout";
 import { fadeSlide } from "@/shared/helpers/fade-slide";
 import { LANGUAGES } from "@/assets/data/languages";
 import { Globe, Languages } from "lucide-react";
@@ -14,7 +12,7 @@ export const LanguageCard = () => {
 
   return (
     <motion.div className={CARD_CLASSNAME} {...motionVariantHelper(fadeSlide({ x: -50 }))}>
-      <div className="flex items-center gap-1.5 mb-3">
+      <div className={CARD_HEADER_CLASSNAME}>
         <Globe className="size-4.5 text-foreground/85" />
         <h1 className="text-[15px] font-medium tracking-wide text-foreground/85">
           {t("languages.title")}
@@ -34,7 +32,6 @@ export const LanguageCard = () => {
           </div>
         ))}
       </div>
-      <StripedPatternBase />
     </motion.div>
   );
 };

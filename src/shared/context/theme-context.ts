@@ -1,5 +1,3 @@
-"use client";
-
 import { Theme } from "@/shared/lib/theme";
 import { createContext } from "react";
 
