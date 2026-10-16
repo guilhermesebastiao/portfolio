@@ -47,12 +47,10 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
           className="rounded-t-lg grayscale-90 transition duration-700 ease-out group-hover:scale-110 group-hover:grayscale-0"
         />
       </div>
-      <div className="space-y-3 p-3">
-        <div className="flex items-center">
-          <h3 className="text-xl font-medium">{project.name}</h3>
-        </div>
-        <p className="text-xs text-muted-foreground h-full">{t(project.description)}</p>
-        <div className="flex w-full flex-wrap gap-2">
+      <div className="space-y-2 pt-4">
+        <h3 className="text-xl font-medium">{project.name}</h3>
+        <p className="text-[13px] text-muted-foreground">{t(project.description)}</p>
+        <div className="flex w-full flex-wrap mt-2.5 gap-2">
           {project.stacks.map((stack, index) => (
             <div key={index} className={twMerge(BADGE_CLASSNAME, "select-none px-2 py-0.5")}>
               <span className="text-xs text-foreground/80">{stack}</span>
