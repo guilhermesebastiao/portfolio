@@ -1,12 +1,12 @@
 import { motionVariantHelper } from "@/shared/helpers/motion-variant-helper";
-import { CARD_CLASSNAME } from "@/features/about/constants/cards-classname";
 import { StackComponent } from "@/features/about/components/stack";
 import { fadeSlide } from "@/shared/helpers/fade-slide";
+import { SURFACE_CLASSNAME } from "@/shared/lib/layout";
 import { DEV_STACKS } from "@/assets/data/stacks";
 import { useTranslation } from "react-i18next";
+import { twMerge } from "tailwind-merge";
 import { Hammer } from "lucide-react";
 import { motion } from "motion/react";
-import { twMerge } from "tailwind-merge";
 
 export const ToolStackCard = () => {
   const { t } = useTranslation("about");
@@ -15,7 +15,7 @@ export const ToolStackCard = () => {
 
   return (
     <motion.div
-      className={twMerge(CARD_CLASSNAME, "col-span-2")}
+      className={twMerge(SURFACE_CLASSNAME, "lg:col-span-2 lg:col-start-2 md:col-span-2")}
       {...motionVariantHelper(fadeSlide({ x: 50 }))}
     >
       <div className="flex items-center gap-1.5 mb-3">

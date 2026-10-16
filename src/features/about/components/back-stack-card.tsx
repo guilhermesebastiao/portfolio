@@ -1,7 +1,7 @@
 import { motionVariantHelper } from "@/shared/helpers/motion-variant-helper";
-import { CARD_CLASSNAME } from "@/features/about/constants/cards-classname";
 import { StackComponent } from "@/features/about/components/stack";
 import { CARD_HEADER_CLASSNAME } from "@/shared/lib/layout";
+import { SURFACE_CLASSNAME } from "@/shared/lib/layout";
 import { fadeSlide } from "@/shared/helpers/fade-slide";
 import { DEV_STACKS } from "@/assets/data/stacks";
 import { useTranslation } from "react-i18next";
@@ -14,7 +14,7 @@ export const BackStackCard = () => {
   const { stacks } = DEV_STACKS.filter((stack) => stack.type === "backend")[0];
 
   return (
-    <motion.div {...motionVariantHelper(fadeSlide({ x: 50 }))} className={CARD_CLASSNAME}>
+    <motion.div {...motionVariantHelper(fadeSlide({ x: 50 }))} className={SURFACE_CLASSNAME}>
       <div className={CARD_HEADER_CLASSNAME}>
         <HardDrive className="size-4.5 text-foreground/85" />
         <h1 className="text-[15px] font-medium tracking-wide text-foreground/85">

@@ -1,9 +1,9 @@
 export const SITE_CONTAINER_CLASSNAME = "mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8";
 
-export const SECTION_CLASSNAME = "flex w-full scroll-mt-16 flex-col gap-10 py-24 md:py-28";
+export const SECTION_CLASSNAME = "flex w-full flex-col gap-10 py-10";
 
 export const SURFACE_CLASSNAME =
-  "relative rounded-lg border-2 border-foreground/7 bg-neutral-200/90 dark:bg-neutral-900/90";
+  "relative rounded-lg border-2 border-foreground/7 bg-neutral-200/90 dark:bg-neutral-900/90 flex flex-col p-5";
 
 export const SECTION_TITLE_CLASSNAME = "text-3xl font-bold md:text-4xl";
 

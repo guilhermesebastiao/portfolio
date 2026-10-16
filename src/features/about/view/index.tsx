@@ -21,22 +21,20 @@ export const About = () => {
   return (
     <div data-container="1" className={SECTION_CLASSNAME}>
       <DiaTextReveal className={SECTION_TITLE_CLASSNAME} duration={1.5} text={t("title")} />
-      <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-12">
-        <div className="flex h-full flex-col gap-4 md:col-span-2 lg:col-span-5">
+      <div className="grid w-full grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-[3fr_2fr_2fr]">
+        <div className="flex h-full flex-col gap-3 md:col-span-2 lg:col-span-1 lg:row-span-2">
           <AboutMeCard />
           <LanguageCard />
-          <motion.div className="flex w-full gap-4" {...motionVariantHelper(fadeSlide({ y: 50 }))}>
+          <motion.div className="flex w-full gap-3" {...motionVariantHelper(fadeSlide({ y: 50 }))}>
             <BoxRepository />
             <BoxProject />
           </motion.div>
         </div>
-        <div className="grid gap-4 sm:grid-cols-2 lg:col-span-7">
-          <FrontStackCard />
-          <BackStackCard />
-          <DatabaseStackCard />
-          <CloudStackCard />
-          <ToolStackCard />
-        </div>
+        <FrontStackCard />
+        <BackStackCard />
+        <DatabaseStackCard />
+        <CloudStackCard />
+        <ToolStackCard />
       </div>
     </div>
   );
