@@ -7,8 +7,8 @@ import { ShimmerButton } from "@/shared/components/ui/shimmer-button";
 import { SocialLink } from "@/features/hero/components/social-link";
 import { fadeSlide } from "@/shared/helpers/fade-slide";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { SKILLS } from "@/shared/assets/data/skills";
 import { useTranslation } from "react-i18next";
-import { SKILLS } from "@/assets/data/skills";
 import { Download } from "lucide-react";
 import { motion } from "motion/react";
 

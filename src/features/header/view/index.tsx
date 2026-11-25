@@ -10,7 +10,7 @@ import { APP_SECTIONS, AppSection } from "@/shared/lib/analytics";
 import { Actions } from "@/features/header/components/actions";
 import { SITE_CONTAINER_CLASSNAME } from "@/shared/lib/layout";
 import { BaseImage } from "@/shared/components/base-image";
-import iconImg from "@/assets/images/icon.webp";
+import iconImg from "@/shared/assets/images/icon.webp";
 import { AnimatePresence } from "motion/react";
 import { useCallback, useState } from "react";
 import { twMerge } from "tailwind-merge";

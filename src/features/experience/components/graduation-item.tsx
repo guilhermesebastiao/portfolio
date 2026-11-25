@@ -1,4 +1,4 @@
-import type { Graduation } from "@/assets/data/graduations";
+import type { Graduation } from "@/shared/assets/data/graduations";
 import { useTranslation } from "react-i18next";
 import { MapPin } from "lucide-react";
 

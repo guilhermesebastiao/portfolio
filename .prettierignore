@@ -1,32 +1,15 @@
-```gitignore
-# Dependencies
+.gitignore
 node_modules
-
-# Next.js
 .next
 out
-
-# Coverage
 coverage
-
-# Logs
 *.log
-
-# Environment
 .env*
 !.env.example
-
-# Build
 dist
 build
-
-# Vercel
 .vercel
-
-# Cache
 .turbo
-
-# Generated files
 *.min.js
 *.min.css
 

@@ -1,4 +1,4 @@
-import detailBg from "@/assets/images/detail.webp";
+import detailBg from "@/shared/assets/images/detail.webp";
 
 export const BackgroundEffect = () => {
   return (

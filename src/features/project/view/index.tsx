@@ -1,6 +1,6 @@
 import { ProjectCard } from "@/features/project/components/project-card";
 import { DiaTextReveal } from "@/shared/components/ui/dia-text-reveal";
-import { PROJECTS } from "@/assets/data/projects";
+import { PROJECTS } from "@/shared/assets/data/projects";
 import { useTranslation } from "react-i18next";
 import { SECTION_CLASSNAME } from "@/shared/lib/layout";
 import { SECTION_TITLE_CLASSNAME } from "@/shared/lib/layout";

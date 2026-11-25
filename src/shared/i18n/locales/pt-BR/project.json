@@ -3,6 +3,12 @@
   "card": {
     "redirect-code": "Ver código"
   },
+  "front-authentication": {
+    "description": "Esse projeto é uma aplicação web para autenticação e gestão de sessões. Oferece uma interface para cadastro, login, gerenciamento das sessões e muito mais."
+  },
+  "back-authentication": {
+    "description": "Esse backend implementa os principais fluxos de identidade de uma aplicação que precisa de um fluxo de autenticação de usuários."
+  },
   "front-ecommerce": {
     "description": "Frontend de um e-commerce com pagamentos fictícios, autenticação e muito mais."
   },

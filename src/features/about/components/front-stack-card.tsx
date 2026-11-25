@@ -3,7 +3,7 @@ import { StackComponent } from "@/features/about/components/stack";
 import { CARD_HEADER_CLASSNAME } from "@/shared/lib/layout";
 import { SURFACE_CLASSNAME } from "@/shared/lib/layout";
 import { fadeSlide } from "@/shared/helpers/fade-slide";
-import { DEV_STACKS } from "@/assets/data/stacks";
+import { DEV_STACKS } from "@/shared/assets/data/stacks";
 import { useTranslation } from "react-i18next";
 import { LaptopMinimal } from "lucide-react";
 import { motion } from "motion/react";

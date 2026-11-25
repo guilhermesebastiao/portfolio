@@ -1,6 +1,6 @@
 import { CertificationModal } from "@/features/experience/components/certification-modal";
 import { motionVariantHelper } from "@/shared/helpers/motion-variant-helper";
-import type { Certification } from "@/assets/data/certifications";
+import type { Certification } from "@/shared/assets/data/certifications";
 import { fadeSlide } from "@/shared/helpers/fade-slide";
 import { useTranslation } from "react-i18next";
 import { motion } from "motion/react";

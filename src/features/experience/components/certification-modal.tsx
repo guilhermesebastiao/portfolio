@@ -1,5 +1,5 @@
 import { useTrackEvents } from "@/features/experience/hooks/use-track-events";
-import type { Certification } from "@/assets/data/certifications";
+import type { Certification } from "@/shared/assets/data/certifications";
 import { BaseImage } from "@/shared/components/base-image";
 import { Button } from "@/shared/components/ui/button";
 import { useTranslation } from "react-i18next";

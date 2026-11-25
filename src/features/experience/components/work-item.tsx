@@ -1,5 +1,5 @@
+import type { Work } from "@/shared/assets/data/works";
 import { useTranslation } from "react-i18next";
-import type { Work } from "@/assets/data/works";
 
 type WorkItemProps = {
   work: Work;

@@ -2,7 +2,7 @@ import { motionVariantHelper } from "@/shared/helpers/motion-variant-helper";
 import { CARD_HEADER_CLASSNAME } from "@/shared/lib/layout";
 import { SURFACE_CLASSNAME } from "@/shared/lib/layout";
 import { fadeSlide } from "@/shared/helpers/fade-slide";
-import { LANGUAGES } from "@/assets/data/languages";
+import { LANGUAGES } from "@/shared/assets/data/languages";
 import { Globe, Languages } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { motion } from "motion/react";

@@ -1,5 +1,5 @@
 import { BADGE_CLASSNAME } from "@/shared/lib/layout";
-import { type Stack } from "@/assets/data/stacks";
+import { type Stack } from "@/shared/assets/data/stacks";
 
 type StackComponentProps = {
   stack: Stack;
