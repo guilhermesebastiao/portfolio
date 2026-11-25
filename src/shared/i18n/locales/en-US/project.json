@@ -3,6 +3,12 @@
   "card": {
     "redirect-code": "View Code"
   },
+  "front-authentication": {
+    "description": "This project is a web application for authentication and session management. It provides an interface for registration, login, session management, and much more."
+  },
+  "back-authentication": {
+    "description": "This backend implements the core identity flows for an application that requires a user authentication flow."
+  },
   "front-ecommerce": {
     "description": "Frontend for an e-commerce application featuring mock payments, authentication, and more."
   },

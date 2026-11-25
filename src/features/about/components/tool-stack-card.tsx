@@ -2,7 +2,7 @@ import { motionVariantHelper } from "@/shared/helpers/motion-variant-helper";
 import { StackComponent } from "@/features/about/components/stack";
 import { fadeSlide } from "@/shared/helpers/fade-slide";
 import { SURFACE_CLASSNAME } from "@/shared/lib/layout";
-import { DEV_STACKS } from "@/assets/data/stacks";
+import { DEV_STACKS } from "@/shared/assets/data/stacks";
 import { useTranslation } from "react-i18next";
 import { twMerge } from "tailwind-merge";
 import { Hammer } from "lucide-react";

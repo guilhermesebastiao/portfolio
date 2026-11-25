@@ -1,7 +1,7 @@
 import { DEFAULT_LANGUAGE, isLanguage, LANGUAGE_COOKIE_KEY } from "@/shared/lib/language";
 import { DEFAULT_THEME, isTheme, THEME_COOKIE_KEY } from "@/shared/lib/theme";
 import { getCookieValue } from "@/shared/utils/get-cookie-value";
-import { SITE_METADATA } from "@/assets/data/metadata";
+import { SITE_METADATA } from "@/shared/assets/data/metadata";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Providers } from "@/app/providers";
 import { twMerge } from "tailwind-merge";
@@ -41,42 +41,12 @@ export const metadata: Metadata = {
     url: SITE_METADATA.url,
     title: SITE_METADATA.title,
     description: SITE_METADATA.description,
-    images: [
-      {
-        url: SITE_METADATA.ogImage,
-        alt: SITE_METADATA.title,
-        width: 1200,
-        height: 630,
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
     title: SITE_METADATA.title,
     description: SITE_METADATA.description,
-    images: [SITE_METADATA.ogImage],
   },
-  icons: {
-    icon: [
-      {
-        url: "/favicon.svg",
-        type: "image/svg+xml",
-      },
-      {
-        url: "/favicon-96x96.png",
-        sizes: "96x96",
-        type: "image/png",
-      },
-    ],
-    shortcut: "/favicon.ico",
-    apple: [
-      {
-        url: "/apple-touch-icon.png",
-        sizes: "180x180",
-      },
-    ],
-  },
-  manifest: "/site.webmanifest",
 };
 
 const RootLayout = async ({

@@ -5,13 +5,13 @@ import { DiaTextReveal } from "@/shared/components/ui/dia-text-reveal";
 import { BookmarkCheck, GraduationCap, Briefcase } from "lucide-react";
 import { WorkItem } from "@/features/experience/components/work-item";
 import { SECTION_TITLE_CLASSNAME } from "@/shared/lib/layout";
-import { CERTIFICATIONS } from "@/assets/data/certifications";
+import { CERTIFICATIONS } from "@/shared/assets/data/certifications";
 import { Card } from "@/features/experience/components/card";
 import { SECTION_CLASSNAME } from "@/shared/lib/layout";
 import { fadeSlide } from "@/shared/helpers/fade-slide";
-import { GRADUATIONS } from "@/assets/data/graduations";
+import { GRADUATIONS } from "@/shared/assets/data/graduations";
 import { useTranslation } from "react-i18next";
-import { WORKS } from "@/assets/data/works";
+import { WORKS } from "@/shared/assets/data/works";
 
 export const Experience = () => {
   const { t } = useTranslation("experience");

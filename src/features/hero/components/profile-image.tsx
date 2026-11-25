@@ -1,8 +1,8 @@
 import { motionVariantHelper } from "@/shared/helpers/motion-variant-helper";
 import { BaseImage } from "@/shared/components/base-image";
+import photoImg from "@/shared/assets/images/photo.webp";
 import { fadeSlide } from "@/shared/helpers/fade-slide";
 import { Ripple } from "@/shared/components/ui/ripple";
-import photoImg from "@/assets/images/photo.webp";
 import { motion } from "motion/react";
 
 export const ProfileImage = () => {

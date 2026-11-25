@@ -5,7 +5,6 @@ export const SITE_METADATA = {
   description:
     "Guilherme Sebastião - Full Stack Developer. Building scalable web applications using React, Next.js, TypeScript, NestJS, Java, and Spring Boot. Explore my work!",
   url: "https://guilhermesebastiao.dev",
-  ogImage: "https://guilhermesebastiao.dev/og-image.jpg",
   keywords: [
     "Guilherme Sebastião",
     "Full Stack Developer",

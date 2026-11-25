@@ -3,7 +3,7 @@ import { useTrackEvents } from "@/features/project/hooks/use-track-events";
 import { BaseImage } from "@/shared/components/base-image";
 import { SURFACE_CLASSNAME } from "@/shared/lib/layout";
 import { fadeSlide } from "@/shared/helpers/fade-slide";
-import { type Project } from "@/assets/data/projects";
+import { type Project } from "@/shared/assets/data/projects";
 import { BADGE_CLASSNAME } from "@/shared/lib/layout";
 import { useTranslation } from "react-i18next";
 import { MoveUpRight } from "lucide-react";

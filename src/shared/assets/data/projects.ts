@@ -1,19 +1,35 @@
-import ecommerceApiCover from "@/assets/images/projects/ecommerce_api_cover.webp";
-import flappyBirdCover from "@/assets/images/projects/flappy_bird_cover.webp";
-import memoryGameCover from "@/assets/images/projects/memory_game_cover.webp";
-import ticTacToeCover from "@/assets/images/projects/tic_tac_toe_cover.webp";
-import snakeGameCover from "@/assets/images/projects/snake_game_cover.webp";
-import ecommerceCover from "@/assets/images/projects/ecommerce_cover.webp";
-import todoListCover from "@/assets/images/projects/todo_list_cover.webp";
-import termoCover from "@/assets/images/projects/termo_cover.webp";
+import authenticationApiCover from "@/shared/assets/images/projects/authentication_api_cover.webp";
+import authenticationCover from "@/shared/assets/images/projects/authentication_cover.webp";
+import ecommerceApiCover from "@/shared/assets/images/projects/ecommerce_api_cover.webp";
+import flappyBirdCover from "@/shared/assets/images/projects/flappy_bird_cover.webp";
+import memoryGameCover from "@/shared/assets/images/projects/memory_game_cover.webp";
+import ticTacToeCover from "@/shared/assets/images/projects/tic_tac_toe_cover.webp";
+import snakeGameCover from "@/shared/assets/images/projects/snake_game_cover.webp";
+import ecommerceCover from "@/shared/assets/images/projects/ecommerce_cover.webp";
+import todoListCover from "@/shared/assets/images/projects/todo_list_cover.webp";
+import termoCover from "@/shared/assets/images/projects/termo_cover.webp";
 
 export const PROJECTS = [
+  {
+    name: "Authentication",
+    description: "project:front-authentication.description",
+    cover: authenticationCover,
+    link: "https://github.com/guilhermesebastiao/authentication",
+    stacks: ["TypeScript", "Next", "Tailwind"],
+  },
+  {
+    name: "Authentication API",
+    description: "project:back-authentication.description",
+    cover: authenticationApiCover,
+    link: "https://github.com/guilhermesebastiao/authentication-api",
+    stacks: ["Java", "SpringBoot", "Spring Security", "Postgres", "RabbitMQ", "Redis", "Docker"],
+  },
   {
     name: "Ecommerce",
     description: "project:front-ecommerce.description",
     cover: ecommerceCover,
     link: "https://github.com/guilhermesebastiao/ecommerce",
-    stacks: ["TypeScript", "React", "Tailwind", "ShadCn"],
+    stacks: ["TypeScript", "React", "Tailwind"],
   },
   {
     name: "Ecommerce API",

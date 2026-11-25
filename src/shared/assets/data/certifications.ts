@@ -1,16 +1,16 @@
-import desenvolvimento_web_completo from "@/assets/images/certificates/desenvolvimento_web_completo.webp";
-import curso_js_ts_basico_avancado from "@/assets/images/certificates/curso_js_ts_basico_avancado.webp";
-import networking_essentials from "@/assets/images/certificates/networking_essentials.webp";
-import react_zero_maestria from "@/assets/images/certificates/react_zero_maestria.webp";
-import udmj_certificate from "@/assets/images/certificates/udmj_certificate.webp";
-import psc_certificate from "@/assets/images/certificates/psc_certificate.webp";
-import acs_certificate from "@/assets/images/certificates/acs_certificate.webp";
-import acc_certificate from "@/assets/images/certificates/acc_certificate.webp";
-import sdm_certificate from "@/assets/images/certificates/sdm_certificate.webp";
-import gqs_certificate from "@/assets/images/certificates/gqs_certificate.webp";
-import ai_certificate from "@/assets/images/certificates/ai_certificate.webp";
-import ms_certificate from "@/assets/images/certificates/ms_certificate.webp";
-import dev_the_devs from "@/assets/images/certificates/dev_the_devs.webp";
+import desenvolvimento_web_completo from "@/shared/assets/images/certificates/desenvolvimento_web_completo.webp";
+import curso_js_ts_basico_avancado from "@/shared/assets/images/certificates/curso_js_ts_basico_avancado.webp";
+import networking_essentials from "@/shared/assets/images/certificates/networking_essentials.webp";
+import react_zero_maestria from "@/shared/assets/images/certificates/react_zero_maestria.webp";
+import udmj_certificate from "@/shared/assets/images/certificates/udmj_certificate.webp";
+import psc_certificate from "@/shared/assets/images/certificates/psc_certificate.webp";
+import acs_certificate from "@/shared/assets/images/certificates/acs_certificate.webp";
+import acc_certificate from "@/shared/assets/images/certificates/acc_certificate.webp";
+import sdm_certificate from "@/shared/assets/images/certificates/sdm_certificate.webp";
+import gqs_certificate from "@/shared/assets/images/certificates/gqs_certificate.webp";
+import ai_certificate from "@/shared/assets/images/certificates/ai_certificate.webp";
+import ms_certificate from "@/shared/assets/images/certificates/ms_certificate.webp";
+import dev_the_devs from "@/shared/assets/images/certificates/dev_the_devs.webp";
 
 export const CERTIFICATIONS = [
   {
